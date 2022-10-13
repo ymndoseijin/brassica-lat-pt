@@ -2,7 +2,7 @@ new categories
 
 V = a e i o u ʊ ɛ ɔ ɪ
 
-N = ã ẽ ĩ õ ũ ʊ̃ ɛ̃ ɔ̃ ɪ̃
+N = ã ẽ ĩ õ ũ ʊ̃ ɛ̃ ɪ̃
 
 L = ā ē ī ō ū
 
@@ -14,18 +14,20 @@ VV = a e i o u ā ē ī ō ū
 
 C = p t c q b d g m n l r j h f v s kw
 FC = s z
+MARK = '
 end
 
 ; changes from ortography
 
 q u / kw / _
 
+; só polisilabico
+
 ; vulgar latin
 
 h / / _
 
-u m / ō / _
-u s / ō s / _
+V m / N / _ # ;
 ; os dois sem detalhe
 
 u / / c _ C
@@ -48,10 +50,6 @@ g j / j / _
 d j / j / _
 
 ; msm coisa
-
-; acontece com estressado nesse caso
-
-m / / _ # ;
 
 ; proto romance changes
 
@@ -124,7 +122,20 @@ dʒ ɛ / dʒ e / _
 
 ; intervocal
 
-[t c p] / [d g b] / V _ o
+
+[t c p] / [d g b] / [a ā] _ VT
+
+[t c p] / [d g b] / [i u] _ [i u ĩ ũ]
+
+[t c p] / [d g b] / [ɪ ʊ] _ [i u ɪ ʊ ĩ ũ ɪ̃ ʊ̃]
+
+; creio que só aconteça quando é mais aberto que a de antes
+
+
+
+ũ / o / _
+u s / o s / _
+
 
 tts / dʒ / V _ V
 ttsj / tts / V _ V
@@ -140,7 +151,8 @@ dʒ / ʒ / _
 
 ; não achei ainda essa então é meio hackish
 
-p l / tʃ / _ FV ; isso é um chute
+p l / tʃ / _ FV
+; isso é um chute
 
 ; palatais
 
@@ -150,27 +162,43 @@ c l / ʎ / _
 
 ;
 
+N / V / _ #
 
 ; nasais
 
-V n / [N N] / _ V
-
-; vogais pertos uma da outra se nasalizam, até distantes, aparentemente
-
-[a e ɛ] n / [ã ẽ ɛ̃] / _ C* [a e ɛ]
+V n / N / _ C* VT
+ɛ̃ / ẽ
 
 
-; se a segunda vogal for mais aberta, nasalização é perdida
+
+l / / VT _ VT
+
+; vogais pertos uma da outra se nasalizam pra uma só, até distantes, aparentemente
+
+; se for estressado
+ã a / ã / ' C* V* _
+
+[a ã e ẽ ɛ] [ã ẽ] / ~ [ã ẽ] / _
+
+; se não, faz um diptongo
+
+[a e ɛ] n / [ã ẽ ẽ] / _ C* [u ũ]
+
+; se a segunda vogal for mais aberta, ou igual, nasalização é perdida
 
 ũ / u / _ [a ã e ẽ ɛ]
 
 õ / o / _ [a ã e ẽ ɛ]
 
-; fim de nasalização "normal"
+[a ā ã] [a ā ã] / a / _
 
-l / / VT _ VT
+; se a primeira vogal foi i, crie um nasal palatal
 
-C C / C
+ĩ / ij̃ / _ VT
+
+
+
+C > / C
 
 ; combinar
 
@@ -179,9 +207,6 @@ C C / C
 
 ; epenthesis
 
-; se a primeira vogal foi i, crie um nasal palatal
-
-ĩ / ij̃ / _ VT
 
 ; quebrar sons de digrafos
 
@@ -192,11 +217,12 @@ C C / C
 
 ɛ̃ ʊ / ʊ ɛ / _
 
-; hacks meus ainda não verificados por literatura
-
-[a ā ã] [a ā ã] / a / _
-
 ; grafia comum do português
+
+N / V n / _ C
+
+c / qu / _ e
+kw / qu / _
 
 õ / om / _ #
 

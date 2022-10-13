@@ -29,6 +29,12 @@ u s / ō s / _
 ; os dois sem detalhe
 
 u / / c _ C
+
+; troca entre vogais, isso também não é detalhado, mas é muito convincente, já que aconteceu em toda língua romanica
+
+V V r / ~ r V / _
+
+
 ; sincope quando u não é estressado, também sem detalhe, c é meio ruim
 
 [FV -L] / j / C _ VT
@@ -163,7 +169,8 @@ V n / [N N] / _ V
 ; fim de nasalização "normal"
 
 l / / VT _ VT
-l l / l
+
+C C / C
 
 ; combinar
 

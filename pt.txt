@@ -39,10 +39,10 @@ V V r / ~ r V / _
 
 ; sincope quando u não é estressado, também sem detalhe, c é meio ruim
 
-[FV -L] / j / C _ VT
+[FV] / j / C _ VT / ' C* _
 ; exceto quando estressado, tem que ver, por enquanto só vou por sem vogal longa pq geralmente é estressado nesse caso
 
-[BV -L] / w / C _ VT
+[BV] / W / C _ VT / ' C* _
 
 w / / _ [BV -L]
 kw j / kj / _
@@ -123,11 +123,11 @@ dʒ ɛ / dʒ e / _
 ; intervocal
 
 
-[t c p] / [d g b] / [a ā] _ VT
+[t c p] r* / [d g b] / [a ā] _ VT
 
-[t c p] / [d g b] / [i u] _ [i u ĩ ũ]
+[t c p] r* / [d g b] / [i u] _ C* [i u ĩ ũ]
 
-[t c p] / [d g b] / [ɪ ʊ] _ [i u ɪ ʊ ĩ ũ ɪ̃ ʊ̃]
+[t c p] r* / [d g b] / [ɪ ʊ] _ C* [i u ɪ ʊ ĩ ũ ɪ̃ ʊ̃]
 
 ; creio que só aconteça quando é mais aberto que a de antes
 
@@ -225,4 +225,5 @@ c / qu / _ e
 kw / qu / _
 
 õ / om / _ #
+
 

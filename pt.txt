@@ -1,0 +1,195 @@
+new categories
+
+V = a e i o u ʊ ɛ ɔ ɪ
+
+N = ã ẽ ĩ õ ũ ʊ̃ ɛ̃ ɔ̃ ɪ̃
+
+L = ā ē ī ō ū
+
+FV = a e i ā ē ī
+BV = u o ū ō
+
+VT = V N L PORTV
+VV = a e i o u ā ē ī ō ū
+
+C = p t c q b d g m n l r j h f v s kw
+FC = s z
+end
+
+; changes from ortography
+
+q u / kw / _
+
+; vulgar latin
+
+h / / _
+
+u m / ō / _
+u s / ō s / _
+; os dois sem detalhe
+
+u / / c _ C
+; sincope quando u não é estressado, também sem detalhe, c é meio ruim
+
+[FV -L] / j / C _ VT
+; exceto quando estressado, tem que ver, por enquanto só vou por sem vogal longa pq geralmente é estressado nesse caso
+
+[BV -L] / w / C _ VT
+
+w / / _ [BV -L]
+kw j / kj / _
+g j / j / _
+d j / j / _
+
+; msm coisa
+
+; acontece com estressado nesse caso
+
+m / / _ # ;
+
+; proto romance changes
+
+C > [u v w] / C / _ e
+
+; fricativo bilabial
+
+[u v w b] / β / VT _ VT
+[u v w b] / β / # _ VT
+
+b / β / _ r
+
+; romance palatizations
+; stage 1
+
+t j / tts / _
+d j / dʒ / _
+
+; palatização de c,g, stage 3
+
+c j / ttsj / _
+g j / ddʒj / _
+
+; stage 5
+
+c / tts / _ [e ē]
+g / dʒ / _ [e ē]
+
+
+; vowel proto romance changes
+
+e / / r _ #
+
+[V L] n / L / _ FC
+
+i ī / ī / _
+
+u / ʊ / _
+
+ū / u / _
+
+e / ɛ / _
+
+ē / e / _
+
+o / ɔ / _
+
+ō / o / _
+
+i / ɪ / _
+
+ī / i / _
+
+ā / a / _
+
+; L / V / _ remoção de vogal longa
+
+
+
+
+
+
+
+
+
+; mudanças do português em especifico
+
+tts ɛ / tts e / _
+dʒ ɛ / dʒ e / _
+
+; intervocal
+
+[t c p] / [d g b] / V _ o
+
+tts / dʒ / V _ V
+ttsj / tts / V _ V
+tts / s / _
+
+
+;
+
+
+dʒ / ʒ / _
+
+β / v / _
+
+; não achei ainda essa então é meio hackish
+
+p l / tʃ / _ FV ; isso é um chute
+
+; palatais
+
+[l n] j / [ʎ j̃] / _
+
+c l / ʎ / _
+
+;
+
+
+; nasais
+
+V n / [N N] / _ V
+
+; vogais pertos uma da outra se nasalizam, até distantes, aparentemente
+
+[a e ɛ] n / [ã ẽ ɛ̃] / _ C* [a e ɛ]
+
+
+; se a segunda vogal for mais aberta, nasalização é perdida
+
+ũ / u / _ [a ã e ẽ ɛ]
+
+õ / o / _ [a ã e ẽ ɛ]
+
+; fim de nasalização "normal"
+
+l / / VT _ VT
+l l / l
+
+; combinar
+
+ɛ̃ [ɛ e] / e / _
+ẽ [ɛ e] / e / _
+
+; epenthesis
+
+; se a primeira vogal foi i, crie um nasal palatal
+
+ĩ / ij̃ / _ VT
+
+; quebrar sons de digrafos
+
+; N VT / V j VT / _
+
+
+; metathesis
+
+ɛ̃ ʊ / ʊ ɛ / _
+
+; hacks meus ainda não verificados por literatura
+
+[a ā ã] [a ā ã] / a / _
+
+; grafia comum do português
+
+õ / om / _ #
+

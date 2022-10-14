@@ -2,7 +2,7 @@ new categories
 
 V = a e i o u ʊ ɛ ɔ ɪ
 
-N = ã ẽ ĩ õ ũ ʊ̃ ɛ̃ ɪ̃
+N = ã ẽ ĩ õ ũ ʊ̃ ɛ̃ ɔ̃ ɪ̃
 
 L = ā ē ī ō ū
 
@@ -12,7 +12,7 @@ BV = u o ū ō
 VT = V N L PORTV
 VV = a e i o u ā ē ī ō ū
 
-C = p t c q b d g m n l r j h f v s kw
+C = p t c q b d g m n l r j h f v s kw ʒ
 FC = s z
 MARK = '
 end
@@ -39,15 +39,18 @@ V V r / ~ r V / _
 
 ; sincope quando u não é estressado, também sem detalhe, c é meio ruim
 
-[FV] / j / C _ VT / ' C* _
+[FV] / j / [C -s] _ VT / ' [C -s]* _
 ; exceto quando estressado, tem que ver, por enquanto só vou por sem vogal longa pq geralmente é estressado nesse caso
 
-[BV] / W / C _ VT / ' C* _
+[BV] / w / C _ VT / ' C* _
 
 w / / _ [BV -L]
 kw j / kj / _
 g j / j / _
 d j / j / _
+
+C s / C a / _
+; trabs por ex
 
 ; msm coisa
 
@@ -75,7 +78,7 @@ g j / ddʒj / _
 
 ; stage 5
 
-c / tts / _ [e ē]
+c / tts / _ [e ē] / # _
 g / dʒ / _ [e ē]
 
 
@@ -123,11 +126,17 @@ dʒ ɛ / dʒ e / _
 ; intervocal
 
 
-[t c p] r* / [d g b] / [a ā] _ VT
+[t c p] / [d g b] / [a ā] _ [a ã e ẽ ɛ ɛ̃]
+[t c p] r / [d g b] r / [a ā] _ [a ã e ẽ ɛ ɛ̃]
 
-[t c p] r* / [d g b] / [i u] _ C* [i u ĩ ũ]
+[t c p] / [d g b] / [e ẽ ɛ ɛ̃] _ [VT a- ã-]
+[t c p] r / [d g b] r / [e ẽ ɛ ɛ̃] _ [VT a- ã-]
 
-[t c p] r* / [d g b] / [ɪ ʊ] _ C* [i u ɪ ʊ ĩ ũ ɪ̃ ʊ̃]
+[t c p] / [d g b] / [i u] _ [i u ĩ ũ]
+[t c p] r / [d g b] r / [i u] _ [i u ĩ ũ]
+
+[t c p] / [d g b] / [ɪ ʊ] _ [i u ɪ ʊ ĩ ũ ɪ̃ ʊ̃]
+[t c p] r / [d g b] r / [ɪ ʊ] _ [i u ɪ ʊ ĩ ũ ɪ̃ ʊ̃]
 
 ; creio que só aconteça quando é mais aberto que a de antes
 
@@ -144,16 +153,6 @@ tts / s / _
 
 ;
 
-
-dʒ / ʒ / _
-
-β / v / _
-
-; não achei ainda essa então é meio hackish
-
-p l / tʃ / _ FV
-; isso é um chute
-
 ; palatais
 
 [l n] j / [ʎ j̃] / _
@@ -161,6 +160,17 @@ p l / tʃ / _ FV
 c l / ʎ / _
 
 ;
+
+
+dʒ / ʒ / # _
+dʒ / z / _
+
+β / v / _
+
+; não achei ainda essa então é meio hackish
+
+p l / tʃ / _ FV
+; isso é um chute
 
 N / V / _ #
 
@@ -219,11 +229,19 @@ C > / C
 
 ; grafia comum do português
 
+ʎ / lh
+
+e / ê
+ɪ / i
+ɛ / é
+
+ʒ / j
+
+[ʊ ɔ] / o
+
 N / V n / _ C
 
 c / qu / _ e
-kw / qu / _
+kw / qu
 
 õ / om / _ #
-
-

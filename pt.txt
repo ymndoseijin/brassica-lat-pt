@@ -32,6 +32,11 @@ V m / N / _ # ;
 
 u / / c _ C
 
+
+a e / ɛ
+o e / ē
+
+
 ; troca entre vogais, isso também não é detalhado, mas é muito convincente, já que aconteceu em toda língua romanica
 
 V V r / ~ r V / _
@@ -120,8 +125,17 @@ i / ɪ / _
 
 ; mudanças do português em especifico
 
+; todo kwe virou ke
+kw [ɛ e] / k [ɛ e]
+
 tts ɛ / tts e / _
 dʒ ɛ / dʒ e / _
+
+; também aconteceu no espanhol
+c c / g
+
+; isso não, porém
+g l / gr
 
 ; intervocal
 
@@ -245,3 +259,4 @@ c / qu / _ e
 kw / qu
 
 õ / om / _ #
+

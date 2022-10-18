@@ -6,7 +6,7 @@ N = ã ẽ ĩ õ ũ ʊ̃ ɛ̃ ɔ̃ ɪ̃
 
 L = ā ē ī ō ū
 
-FV = a e i ā ē ī
+FV = a e i ā ē ī ɛ
 BV = u o ū ō
 
 VT = V N L PORTV
@@ -44,7 +44,7 @@ V V r / ~ r V / _
 
 ; sincope quando u não é estressado, também sem detalhe, c é meio ruim
 
-[FV] / j / [C -s] _ VT / ' [C -s]* _
+[FV] / j / [C] _ VT / ' [C -s]* _
 ; exceto quando estressado, tem que ver, por enquanto só vou por sem vogal longa pq geralmente é estressado nesse caso
 
 [BV] / w / C _ VT / ' C* _
@@ -133,9 +133,14 @@ dʒ ɛ / dʒ e / _
 
 ; também aconteceu no espanhol
 c c / g
+[ɛ e] / i / # _
+
+; uma palatização teorica que só teria acontecido no português
+
 
 ; isso não, porém
 g l / gr
+s j / ʒ
 
 ; intervocal
 
@@ -171,7 +176,7 @@ tts / s / _
 
 [l n] j / [ʎ j̃] / _
 
-c l / ʎ / _
+c l / ʎ / V _
 
 ;
 
@@ -259,4 +264,3 @@ c / qu / _ e
 kw / qu
 
 õ / om / _ #
-
